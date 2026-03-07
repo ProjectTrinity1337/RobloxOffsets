@@ -1,519 +1,484 @@
 #pragma once
+/* =============================================================
+/*                       RbxDumperV2                            
+/*               https://imtheo.lol/Offsets                     
+/* -------------------------------------------------------------
+/*  Dumped By       : theo (https://imtheo.lol)                 
+/*  Roblox Version  : version-d599f7fc52a8404c
+/*  Dumper Version  : 2.1.2
+/*  Dumped At       : 19:46 04/03/2026 (GMT)
+/*  Total Offsets   : 300
+/* -------------------------------------------------------------
+/*  Join the discord!                                           
+/*  https://discord.gg/rbxoffsets                               
+/* =============================================================
+*/
 
 #include <cstdint>
 #include <string>
-
 namespace Offsets {
     inline std::string ClientVersion = "version-d599f7fc52a8404c";
 
+    namespace AirProperties {
+         iinline uintptr_t AirDensity = 0x18;
+         iinline uintptr_t GlobalWind = 0x3c;
+    }
+
     namespace AnimationTrack {
-        inline uintptr_t Animation = 0xd0;
-        inline uintptr_t Animator = 0x118;
-        inline uintptr_t IsPlaying = 0x4b8;
-        inline uintptr_t Looped = 0xf5;
-        inline uintptr_t Speed = 0xe4;
-    } // namespace AnimationTrack
+         iinline uintptr_t Animation = 0xd0;
+         iinline uintptr_t Animator = 0x118;
+         iinline uintptr_t IsPlaying = 0x4b8;
+         iinline uintptr_t Looped = 0xf5;
+         iinline uintptr_t Speed = 0xe4;
+    }
+
+    namespace Animator {
+         iinline uintptr_t ActiveAnimations = 0x620;
+    }
 
     namespace Atmosphere {
-        inline uintptr_t Color = 0xd0;
-        inline uintptr_t Density = 0xe8;
-        inline uintptr_t Glare = 0xec;
-        inline uintptr_t Haze = 0xf0;
-        inline uintptr_t Offset = 0xf4;
-    } // namespace Atmosphere
+         iinline uintptr_t Color = 0xd0;
+         iinline uintptr_t Decay = 0xdc;
+         iinline uintptr_t Density = 0xe8;
+         iinline uintptr_t Glare = 0xec;
+         iinline uintptr_t Haze = 0xf0;
+         iinline uintptr_t Offset = 0xf4;
+    }
+
+    namespace Attachment {
+         iinline uintptr_t Position = 0xdc;
+    }
 
     namespace BasePart {
-        inline uintptr_t AssemblyAngularVelocity = 0xfc;
-        inline uintptr_t AssemblyLinearVelocity = 0xf0;
-        inline uintptr_t Color3 = 0x194;
-        inline uintptr_t Material = 0x248;
-        inline uintptr_t Position = 0xe4;
-        inline uintptr_t Primitive = 0x148;
-        inline uintptr_t PrimitiveFlags = 0x1ae;
-        inline uintptr_t PrimitiveOwner = 0x210;
-        inline uintptr_t Rotation = 0xc0;
-        inline uintptr_t Shape = 0x1b1;
-        inline uintptr_t Size = 0x1b0;
-        inline uintptr_t Transparency = 0xf0;
-        inline uintptr_t ValidatePrimitive = 0x6;
-    } // namespace BasePart
-
-    namespace BaseScript {
-        inline uintptr_t IsCoreScript = 0x0;
-        inline uintptr_t ModuleFlags = 0x0;
-    } // namespace BaseScript
+         iinline uintptr_t Color3 = 0x194;
+         iinline uintptr_t Primitive = 0x148;
+         iinline uintptr_t Shape = 0x1b1;
+         iinline uintptr_t Transparency = 0xf0;
+    }
 
     namespace BloomEffect {
-        inline uintptr_t Enabled = 0xc8;
-        inline uintptr_t Intensity = 0xd0;
-        inline uintptr_t Size = 0xd4;
-        inline uintptr_t Threshold = 0xd8;
-    } // namespace BloomEffect
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t Intensity = 0xd0;
+         iinline uintptr_t Size = 0xd4;
+         iinline uintptr_t Threshold = 0xd8;
+    }
+
+    namespace BlurEffect {
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t Size = 0xd0;
+    }
 
     namespace ByteCode {
-        inline uintptr_t Pointer = 0x10;
-        inline uintptr_t Size = 0x20;
-    } // namespace ByteCode
+         iinline uintptr_t Pointer = 0x10;
+         iinline uintptr_t Size = 0x20;
+    }
 
     namespace Camera {
-        inline uintptr_t CameraSubject = 0xe8;
-        inline uintptr_t CameraType = 0x158;
-        inline uintptr_t FieldOfView = 0x160;
-        inline uintptr_t Position = 0x11c;
-        inline uintptr_t Rotation = 0xf8;
-        inline uintptr_t Viewport = 0x2ac;
-    } // namespace Camera
+         iinline uintptr_t CameraSubject = 0xe8;
+         iinline uintptr_t CameraType = 0x158;
+         iinline uintptr_t FieldOfView = 0x160;
+         iinline uintptr_t Position = 0x11c;
+         iinline uintptr_t Rotation = 0xf8;
+         iinline uintptr_t Viewport = 0x2ac;
+         iinline uintptr_t ViewportSize = 0x2e8;
+    }
+
+    namespace CharacterMesh {
+         iinline uintptr_t BaseTextureId = 0xe0;
+         iinline uintptr_t BodyPart = 0x160;
+         iinline uintptr_t MeshId = 0x110;
+         iinline uintptr_t OverlayTextureId = 0x140;
+    }
 
     namespace ClickDetector {
-        inline uintptr_t MaxActivationDistance = 0x100;
-        inline uintptr_t MouseIcon = 0xe0;
-    } // namespace ClickDetector
+         iinline uintptr_t MaxActivationDistance = 0x100;
+         iinline uintptr_t MouseIcon = 0xe0;
+    }
+
+    namespace Clothing {
+         iinline uintptr_t Color3 = 0x128;
+         iinline uintptr_t Template = 0x108;
+    }
+
+    namespace ColorCorrectionEffect {
+         iinline uintptr_t Brightness = 0xdc;
+         iinline uintptr_t Contrast = 0xe0;
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t TintColor = 0xd0;
+    }
+
+    namespace ColorGradingEffect {
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t TonemapperPreset = 0xd0;
+    }
 
     namespace DataModel {
-        inline uintptr_t CreatorId = 0x188;
-        inline uintptr_t GameId = 0x190;
-        inline uintptr_t GameLoaded = 0x600;
-        inline uintptr_t JobId = 0x138;
-        inline uintptr_t PlaceId = 0x198;
-        inline uintptr_t PlaceVersion = 0x1b4;
-        inline uintptr_t PrimitiveCount = 0x440;
-        inline uintptr_t ScriptContext = 0x3f0;
-        inline uintptr_t ServerIP = 0x5e8;
-        inline uintptr_t Workspace = 0x178;
-    } // namespace DataModel
+         iinline uintptr_t CreatorId = 0x188;
+         iinline uintptr_t GameId = 0x190;
+         iinline uintptr_t GameLoaded = 0x600;
+         iinline uintptr_t JobId = 0x138;
+         iinline uintptr_t PlaceId = 0x198;
+         iinline uintptr_t PlaceVersion = 0x1b4;
+         iinline uintptr_t PrimitiveCount = 0x440;
+         iinline uintptr_t ScriptContext = 0x3f0;
+         iinline uintptr_t ServerIP = 0x5e8;
+         iinline uintptr_t Workspace = 0x178;
+    }
 
     namespace DepthOfFieldEffect {
-        inline uintptr_t Enabled = 0xc8;
-        inline uintptr_t FarIntensity = 0xd0;
-        inline uintptr_t FocusDistance = 0xd4;
-        inline uintptr_t InFocusRadius = 0xd8;
-        inline uintptr_t NearIntensity = 0xdc;
-    } // namespace DepthOfFieldEffect
-
-    namespace FFlag {
-        inline uintptr_t FLogSetGet = 0x20;
-        inline uintptr_t Value = 0xc8;
-    } // namespace FFlag
-
-    namespace FFlags {
-        inline uintptr_t DebugDisableTimeoutDisconnect = 0x6898e08;
-        inline uintptr_t EnableLoadModule = 0x688de60;
-        inline uintptr_t PartyPlayerInactivityTimeoutInSeconds = 0x684892c;
-        inline uintptr_t PhysicsSenderMaxBandwidthBps = 0x6848e04;
-        inline uintptr_t PhysicsSenderMaxBandwidthBpsScaling = 0x6848e04;
-        inline uintptr_t TaskSchedulerLimitTargetFpsTo2402 = 0x0;
-        inline uintptr_t TaskSchedulerTargetFps = 0x75a7c64;
-        inline uintptr_t WebSocketServiceEnableClientCreation = 0x68a5bf8;
-        inline uintptr_t WorldStepMax = 0x684ca74;
-        inline uintptr_t WorldStepsOffsetAdjustRate = 0x684ca70;
-    } // namespace FFlags
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t FarIntensity = 0xd0;
+         iinline uintptr_t FocusDistance = 0xd4;
+         iinline uintptr_t InFocusRadius = 0xd8;
+         iinline uintptr_t NearIntensity = 0xdc;
+    }
 
     namespace FakeDataModel {
-        inline uintptr_t Pointer = 0x7f6c228;
-        inline uintptr_t RealDataModel = 0x1c0;
-    } // namespace FakeDataModel
+         iinline uintptr_t Pointer = 0x7f6c228;
+         iinline uintptr_t RealDataModel = 0x1c0;
+    }
+
+    namespace GuiBase2D {
+         iinline uintptr_t AbsolutePosition = 0x110;
+         iinline uintptr_t AbsoluteRotation = 0x188;
+         iinline uintptr_t AbsoluteSize = 0x118;
+    }
 
     namespace GuiObject {
-        inline uintptr_t BackgroundColor3 = 0x538;
-        inline uintptr_t BorderColor3 = 0x544;
-        inline uintptr_t Image = 0x9c8;
-        inline uintptr_t LayoutOrder = 0x578;
-        inline uintptr_t Position = 0x508;
-        inline uintptr_t RichText = 0xa98;
-        inline uintptr_t Rotation = 0x188;
-        inline uintptr_t ScreenGui_Enabled = 0x4bc;
-        inline uintptr_t Size = 0x528;
-        inline uintptr_t Text = 0xdf8;
-        inline uintptr_t TextColor3 = 0xea8;
-        inline uintptr_t Visible = 0x5a5;
-    } // namespace GuiObject
+         iinline uintptr_t BackgroundColor3 = 0x538;
+         iinline uintptr_t BackgroundTransparency = 0x544;
+         iinline uintptr_t BorderColor3 = 0x544;
+         iinline uintptr_t Image = 0x9c8;
+         iinline uintptr_t LayoutOrder = 0x578;
+         iinline uintptr_t Position = 0x508;
+         iinline uintptr_t RichText = 0xa98;
+         iinline uintptr_t Rotation = 0x188;
+         iinline uintptr_t ScreenGui_Enabled = 0x4bc;
+         iinline uintptr_t Size = 0x528;
+         iinline uintptr_t Text = 0xdf8;
+         iinline uintptr_t TextColor3 = 0xea8;
+         iinline uintptr_t Visible = 0x5a5;
+         iinline uintptr_t ZIndex = 0x59c;
+    }
 
     namespace Humanoid {
-        inline uintptr_t AutoRotate = 0x1d9;
-        inline uintptr_t FloorMaterial = 0x190;
-        inline uintptr_t Health = 0x194;
-        inline uintptr_t HipHeight = 0x1a0;
-        inline uintptr_t HumanoidState = 0x8d0;
-        inline uintptr_t HumanoidStateID = 0x20;
-        inline uintptr_t Jump = 0x1dd;
-        inline uintptr_t JumpHeight = 0x1ac;
-        inline uintptr_t JumpPower = 0x1b0;
-        inline uintptr_t MaxHealth = 0x1b4;
-        inline uintptr_t MaxSlopeAngle = 0x1b8;
-        inline uintptr_t MoveDirection = 0x158;
-        inline uintptr_t RigType = 0x1c8;
-        inline uintptr_t Walkspeed = 0x1d4;
-        inline uintptr_t WalkspeedCheck = 0x3b8;
-    } // namespace Humanoid
+         iinline uintptr_t AutoJumpEnabled = 0x1d8;
+         iinline uintptr_t AutoRotate = 0x1d9;
+         iinline uintptr_t BreakJointsOnDeath = 0x1db;
+         iinline uintptr_t CameraOffset = 0x140;
+         iinline uintptr_t DisplayDistanceType = 0x18c;
+         iinline uintptr_t DisplayName = 0xd0;
+         iinline uintptr_t EvaluateStateMachine = 0x1dc;
+         iinline uintptr_t FloorMaterial = 0x190;
+         iinline uintptr_t Health = 0x194;
+         iinline uintptr_t HealthDisplayDistance = 0x198;
+         iinline uintptr_t HealthDisplayType = 0x19c;
+         iinline uintptr_t HipHeight = 0x1a0;
+         iinline uintptr_t HumanoidRootPart = 0x4b8;
+         iinline uintptr_t HumanoidState = 0x8d0;
+         iinline uintptr_t HumanoidStateID = 0x20;
+         iinline uintptr_t IsWalking = 0x94e;
+         iinline uintptr_t Jump = 0x1dd;
+         iinline uintptr_t JumpHeight = 0x1ac;
+         iinline uintptr_t JumpPower = 0x1b0;
+         iinline uintptr_t MaxHealth = 0x1b4;
+         iinline uintptr_t MaxSlopeAngle = 0x1b8;
+         iinline uintptr_t MoveDirection = 0x158;
+         iinline uintptr_t MoveToPart = 0x130;
+         iinline uintptr_t MoveToPoint = 0x17c;
+         iinline uintptr_t NameDisplayDistance = 0x1bc;
+         iinline uintptr_t NameOcclusion = 0x1c0;
+         iinline uintptr_t PlatformStand = 0x1df;
+         iinline uintptr_t RequiresNeck = 0x1e0;
+         iinline uintptr_t RigType = 0x1c8;
+         iinline uintptr_t SeatPart = 0x120;
+         iinline uintptr_t Sit = 0x1e0;
+         iinline uintptr_t TargetPoint = 0x164;
+         iinline uintptr_t Walkspeed = 0x1d4;
+         iinline uintptr_t WalkspeedCheck = 0x3b8;
+    }
 
     namespace Instance {
-        inline uintptr_t AttributeContainer = 0x48;
-        inline uintptr_t AttributeList = 0x18;
-        inline uintptr_t AttributeToNext = 0x58;
-        inline uintptr_t AttributeToValue = 0x18;
-        inline uintptr_t ChildrenEnd = 0x8;
-        inline uintptr_t ChildrenStart = 0x70;
-        inline uintptr_t ClassBase = 0xde8;
-        inline uintptr_t ClassDescriptor = 0x18;
-        inline uintptr_t ClassName = 0x8;
-        inline uintptr_t Name = 0xb0;
-        inline uintptr_t Parent = 0x68;
-    } // namespace Instance
+         iinline uintptr_t AttributeContainer = 0x48;
+         iinline uintptr_t AttributeList = 0x18;
+         iinline uintptr_t AttributeToNext = 0x58;
+         iinline uintptr_t AttributeToValue = 0x18;
+         iinline uintptr_t ChildrenEnd = 0x8;
+         iinline uintptr_t ChildrenStart = 0x70;
+         iinline uintptr_t ClassBase = 0xde8;
+         iinline uintptr_t ClassDescriptor = 0x18;
+         iinline uintptr_t ClassName = 0x8;
+         iinline uintptr_t Name = 0xb0;
+         iinline uintptr_t Parent = 0x68;
+         iinline uintptr_t This = 0x8;
+    }
 
     namespace Lighting {
-        inline uintptr_t Ambient = 0xd8;
-        inline uintptr_t Brightness = 0x120;
-        inline uintptr_t ClockTime = 0x1b8;
-        inline uintptr_t ColorShift_Bottom = 0xf0;
-        inline uintptr_t ColorShift_Top = 0xe4;
-        inline uintptr_t ExposureCompensation = 0x12c;
-        inline uintptr_t FogColor = 0xfc;
-        inline uintptr_t FogEnd = 0x134;
-        inline uintptr_t FogStart = 0x138;
-        inline uintptr_t GeographicLatitude = 0x190;
-        inline uintptr_t OutdoorAmbient = 0x108;
-    } // namespace Lighting
+         iinline uintptr_t Ambient = 0xd8;
+         iinline uintptr_t Brightness = 0x120;
+         iinline uintptr_t ClockTime = 0x1b8;
+         iinline uintptr_t ColorShift_Bottom = 0xf0;
+         iinline uintptr_t ColorShift_Top = 0xe4;
+         iinline uintptr_t EnvironmentDiffuseScale = 0x124;
+         iinline uintptr_t EnvironmentSpecularScale = 0x128;
+         iinline uintptr_t ExposureCompensation = 0x12c;
+         iinline uintptr_t FogColor = 0xfc;
+         iinline uintptr_t FogEnd = 0x134;
+         iinline uintptr_t FogStart = 0x138;
+         iinline uintptr_t GeographicLatitude = 0x190;
+         iinline uintptr_t GlobalShadows = 0x148;
+         iinline uintptr_t GradientBottom = 0x194;
+         iinline uintptr_t GradientTop = 0x150;
+         iinline uintptr_t LightColor = 0x15c;
+         iinline uintptr_t LightDirection = 0x168;
+         iinline uintptr_t MoonPosition = 0x184;
+         iinline uintptr_t OutdoorAmbient = 0x108;
+         iinline uintptr_t Sky = 0x1d8;
+         iinline uintptr_t Source = 0x174;
+         iinline uintptr_t SunPosition = 0x178;
+    }
 
     namespace LocalScript {
-        inline uintptr_t ByteCode = 0x1a8;
-    } // namespace LocalScript
+         iinline uintptr_t ByteCode = 0x1a8;
+         iinline uintptr_t GUID = 0xe8;
+         iinline uintptr_t Hash = 0x1b8;
+    }
+
+    namespace MaterialColors {
+         iinline uintptr_t Asphalt = 0x30;
+         iinline uintptr_t Basalt = 0x27;
+         iinline uintptr_t Brick = 0xf;
+         iinline uintptr_t Cobblestone = 0x33;
+         iinline uintptr_t Concrete = 0xc;
+         iinline uintptr_t CrackedLava = 0x2d;
+         iinline uintptr_t Glacier = 0x1b;
+         iinline uintptr_t Grass = 0x6;
+         iinline uintptr_t Ground = 0x2a;
+         iinline uintptr_t Ice = 0x36;
+         iinline uintptr_t LeafyGrass = 0x39;
+         iinline uintptr_t Limestone = 0x3f;
+         iinline uintptr_t Mud = 0x24;
+         iinline uintptr_t Pavement = 0x42;
+         iinline uintptr_t Rock = 0x18;
+         iinline uintptr_t Salt = 0x3c;
+         iinline uintptr_t Sand = 0x12;
+         iinline uintptr_t Sandstone = 0x21;
+         iinline uintptr_t Slate = 0x9;
+         iinline uintptr_t Snow = 0x1e;
+         iinline uintptr_t WoodPlanks = 0x15;
+    }
 
     namespace MeshPart {
-        inline uintptr_t MeshId = 0x2e8;
-        inline uintptr_t Texture = 0x318;
-    } // namespace MeshPart
+         iinline uintptr_t MeshId = 0x2e8;
+         iinline uintptr_t Texture = 0x318;
+    }
 
     namespace Misc {
-        inline uintptr_t Adornee = 0x108;
-        inline uintptr_t AnimationId = 0xd0;
-        inline uintptr_t RequireLock = 0x0;
-        inline uintptr_t StringLength = 0x10;
-        inline uintptr_t Value = 0xd0;
-    } // namespace Misc
+         iinline uintptr_t Adornee = 0x108;
+         iinline uintptr_t AnimationId = 0xd0;
+         iinline uintptr_t StringLength = 0x10;
+         iinline uintptr_t Value = 0xd0;
+    }
 
     namespace Model {
-        inline uintptr_t PrimaryPart = 0x278;
-        inline uintptr_t Scale = 0x164;
-    } // namespace Model
+         iinline uintptr_t PrimaryPart = 0x278;
+         iinline uintptr_t Scale = 0x164;
+    }
 
     namespace ModuleScript {
-        inline uintptr_t ByteCode = 0x150;
-    } // namespace ModuleScript
+         iinline uintptr_t ByteCode = 0x150;
+         iinline uintptr_t GUID = 0xe8;
+         iinline uintptr_t Hash = 0x160;
+    }
 
     namespace MouseService {
-        inline uintptr_t InputObject = 0x100;
-        inline uintptr_t MousePosition = 0xec;
-        inline uintptr_t SensitivityPointer = 0x7fea7d0;
-    } // namespace MouseService
+         iinline uintptr_t InputObject = 0x100;
+         iinline uintptr_t MousePosition = 0xec;
+         iinline uintptr_t SensitivityPointer = 0x7fea7d0;
+    }
 
     namespace Player {
-        inline uintptr_t CameraMode = 0x318;
-        inline uintptr_t Country = 0x110;
-        inline uintptr_t DisplayName = 0x130;
-        inline uintptr_t Gender = 0xeb8;
-        inline uintptr_t LocalPlayer = 0x130;
-        inline uintptr_t MaxZoomDistance = 0x310;
-        inline uintptr_t MinZoomDistance = 0x314;
-        inline uintptr_t ModelInstance = 0x380;
-        inline uintptr_t Mouse = 0xda8;
-        inline uintptr_t Team = 0x290;
-        inline uintptr_t UserId = 0x2b8;
-    } // namespace Player
+         iinline uintptr_t CameraMode = 0x318;
+         iinline uintptr_t Country = 0x110;
+         iinline uintptr_t DisplayName = 0x130;
+         iinline uintptr_t Gender = 0x0;
+         iinline uintptr_t HealthDisplayDistance = 0x338;
+         iinline uintptr_t LocalPlayer = 0x130;
+         iinline uintptr_t MaxZoomDistance = 0x310;
+         iinline uintptr_t MinZoomDistance = 0x314;
+         iinline uintptr_t ModelInstance = 0x380;
+         iinline uintptr_t Mouse = 0xda8;
+         iinline uintptr_t NameDisplayDistance = 0x344;
+         iinline uintptr_t Team = 0x290;
+         iinline uintptr_t UserId = 0x2b8;
+    }
 
     namespace PlayerConfigurer {
-        inline uintptr_t OverrideDuration = 0x3b8;
-        inline uintptr_t Pointer = 0x7f49720;
-    } // namespace PlayerConfigurer
+         iinline uintptr_t Pointer = 0x7f49720;
+    }
 
     namespace PlayerMouse {
-        inline uintptr_t Icon = 0xe0;
-        inline uintptr_t Workspace = 0x118;
-    } // namespace PlayerMouse
+         iinline uintptr_t Icon = 0x0;
+         iinline uintptr_t Workspace = 0x118;
+    }
+
+    namespace Primitive {
+         iinline uintptr_t AssemblyAngularVelocity = 0xfc;
+         iinline uintptr_t AssemblyLinearVelocity = 0xf0;
+         iinline uintptr_t Flags = 0x1ae;
+         iinline uintptr_t Material = 0x248;
+         iinline uintptr_t Owner = 0x210;
+         iinline uintptr_t Position = 0xe4;
+         iinline uintptr_t Rotation = 0xc0;
+         iinline uintptr_t Size = 0x1b0;
+         iinline uintptr_t Validate = 0x6;
+    }
 
     namespace PrimitiveFlags {
-        inline uintptr_t Anchored = 0x2;
-        inline uintptr_t CanCollide = 0x8;
-        inline uintptr_t CanTouch = 0x10;
-    } // namespace PrimitiveFlags
+         iinline uintptr_t Anchored = 0x2;
+         iinline uintptr_t CanCollide = 0x8;
+         iinline uintptr_t CanTouch = 0x10;
+    }
 
     namespace ProximityPrompt {
-        inline uintptr_t ActionText = 0xd0;
-        inline uintptr_t Enabled = 0x156;
-        inline uintptr_t GamepadKeyCode = 0x13c;
-        inline uintptr_t HoldDuration = 0x140;
-        inline uintptr_t KeyCode = 0x144;
-        inline uintptr_t MaxActivationDistance = 0x148;
-        inline uintptr_t ObjectText = 0xf0;
-        inline uintptr_t RequiresLineOfSight = 0x157;
-    } // namespace ProximityPrompt
+         iinline uintptr_t ActionText = 0xd0;
+         iinline uintptr_t Enabled = 0x156;
+         iinline uintptr_t GamepadKeyCode = 0x13c;
+         iinline uintptr_t HoldDuration = 0x140;
+         iinline uintptr_t KeyCode = 0x144;
+         iinline uintptr_t MaxActivationDistance = 0x148;
+         iinline uintptr_t ObjectText = 0xf0;
+         iinline uintptr_t RequiresLineOfSight = 0x157;
+    }
+
+    namespace RenderJob {
+         iinline uintptr_t FakeDataModel = 0x38;
+         iinline uintptr_t RealDataModel = 0x1b0;
+         iinline uintptr_t RenderView = 0x218;
+    }
 
     namespace RenderView {
-        inline uintptr_t DeviceD3D11 = 0x8;
-        inline uintptr_t LightingValid = 0x148;
-        inline uintptr_t VisualEngine = 0x10;
-    } // namespace RenderView
+         iinline uintptr_t DeviceD3D11 = 0x8;
+         iinline uintptr_t LightingValid = 0x148;
+         iinline uintptr_t SkyValid = 0x2cd;
+         iinline uintptr_t VisualEngine = 0x10;
+    }
 
     namespace RunService {
-        inline uintptr_t HeartbeatFPS = 0xb8;
-        inline uintptr_t HeartbeatTask = 0xe8;
-    } // namespace RunService
+         iinline uintptr_t HeartbeatFPS = 0xb8;
+         iinline uintptr_t HeartbeatTask = 0xe8;
+    }
+
+    namespace Seat {
+         iinline uintptr_t Occupant = 0x220;
+    }
 
     namespace Sky {
-        inline uintptr_t MoonAngularSize = 0x25c;
-        inline uintptr_t MoonTextureId = 0xe0;
-        inline uintptr_t SkyboxBk = 0x110;
-        inline uintptr_t SkyboxDn = 0x140;
-        inline uintptr_t SkyboxFt = 0x170;
-        inline uintptr_t SkyboxLf = 0x1a0;
-        inline uintptr_t SkyboxOrientation = 0x250;
-        inline uintptr_t SkyboxRt = 0x1d0;
-        inline uintptr_t SkyboxUp = 0x200;
-        inline uintptr_t StarCount = 0x260;
-        inline uintptr_t SunAngularSize = 0x254;
-        inline uintptr_t SunTextureId = 0x230;
-    } // namespace Sky
+         iinline uintptr_t MoonAngularSize = 0x25c;
+         iinline uintptr_t MoonTextureId = 0xe0;
+         iinline uintptr_t SkyboxBk = 0x110;
+         iinline uintptr_t SkyboxDn = 0x140;
+         iinline uintptr_t SkyboxFt = 0x170;
+         iinline uintptr_t SkyboxLf = 0x1a0;
+         iinline uintptr_t SkyboxOrientation = 0x250;
+         iinline uintptr_t SkyboxRt = 0x1d0;
+         iinline uintptr_t SkyboxUp = 0x200;
+         iinline uintptr_t StarCount = 0x260;
+         iinline uintptr_t SunAngularSize = 0x254;
+         iinline uintptr_t SunTextureId = 0x230;
+    }
+
+    namespace Sound {
+         iinline uintptr_t Looped = 0x152;
+         iinline uintptr_t PlaybackSpeed = 0x130;
+         iinline uintptr_t RollOffMaxDistance = 0x134;
+         iinline uintptr_t RollOffMinDistance = 0x138;
+         iinline uintptr_t SoundGroup = 0x100;
+         iinline uintptr_t SoundId = 0xe0;
+         iinline uintptr_t Volume = 0x144;
+    }
+
+    namespace SpawnLocation {
+         iinline uintptr_t AllowTeamChangeOnTouch = 0x45;
+         iinline uintptr_t Enabled = 0x1f9;
+         iinline uintptr_t ForcefieldDuration = 0x1f0;
+         iinline uintptr_t Neutral = 0x1fa;
+         iinline uintptr_t TeamColor = 0x1f4;
+    }
 
     namespace SpecialMesh {
-        inline uintptr_t MeshId = 0x108;
-        inline uintptr_t Scale = 0xdc;
-    } // namespace SpecialMesh
+         iinline uintptr_t MeshId = 0x108;
+         iinline uintptr_t Scale = 0xdc;
+    }
 
     namespace StatsItem {
-        inline uintptr_t Value = 0xc8;
-    } // namespace StatsItem
+         iinline uintptr_t Value = 0xc8;
+    }
 
     namespace SunRaysEffect {
-        inline uintptr_t Enabled = 0xc8;
-        inline uintptr_t Intensity = 0xd0;
-        inline uintptr_t Spread = 0xd4;
-    } // namespace SunRaysEffect
+         iinline uintptr_t Enabled = 0xc8;
+         iinline uintptr_t Intensity = 0xd0;
+         iinline uintptr_t Spread = 0xd4;
+    }
 
     namespace TaskScheduler {
-        inline uintptr_t FakeDataModelToDataModel = 0x1b0;
-        inline uintptr_t JobEnd = 0x1d8;
-        inline uintptr_t JobName = 0x18;
-        inline uintptr_t JobStart = 0x1d0;
-        inline uintptr_t MaxFPS = 0x1b0;
-        inline uintptr_t Pointer = 0x801d408;
-        inline uintptr_t RenderJobToFakeDataModel = 0x38;
-        inline uintptr_t RenderJobToRenderView = 0x218;
-    } // namespace TaskScheduler
+         iinline uintptr_t JobEnd = 0x1d8;
+         iinline uintptr_t JobName = 0x18;
+         iinline uintptr_t JobStart = 0x1d0;
+         iinline uintptr_t MaxFPS = 0x1b0;
+         iinline uintptr_t Pointer = 0x801d408;
+    }
 
     namespace Team {
-        inline uintptr_t BrickColor = 0xd0;
-    } // namespace Team
+         iinline uintptr_t BrickColor = 0xd0;
+    }
 
     namespace Terrain {
-        inline uintptr_t GrassLength = 0x1f8;
-        inline uintptr_t WaterColor = 0x1e8;
-        inline uintptr_t WaterReflectance = 0x200;
-        inline uintptr_t WaterTransparency = 0x204;
-        inline uintptr_t WaterWaveSize = 0x208;
-        inline uintptr_t WaterWaveSpeed = 0x20c;
-    } // namespace Terrain
+         iinline uintptr_t GrassLength = 0x1f8;
+         iinline uintptr_t MaterialColors = 0x280;
+         iinline uintptr_t WaterColor = 0x1e8;
+         iinline uintptr_t WaterReflectance = 0x200;
+         iinline uintptr_t WaterTransparency = 0x204;
+         iinline uintptr_t WaterWaveSize = 0x208;
+         iinline uintptr_t WaterWaveSpeed = 0x20c;
+    }
 
     namespace Textures {
-        inline uintptr_t Decal_Texture = 0x198;
-        inline uintptr_t Texture_Texture = 0x198;
-    } // namespace Textures
+         iinline uintptr_t Decal_Texture = 0x198;
+         iinline uintptr_t Texture_Texture = 0x198;
+    }
+
+    namespace Tool {
+         iinline uintptr_t CanBeDropped = 0x4a0;
+         iinline uintptr_t Enabled = 0x3eb;
+         iinline uintptr_t Grip = 0x494;
+         iinline uintptr_t ManualActivationOnly = 0x4a2;
+         iinline uintptr_t RequiresHandle = 0x4a3;
+         iinline uintptr_t TextureId = 0x348;
+         iinline uintptr_t Tooltip = 0x450;
+    }
 
     namespace VisualEngine {
-        inline uintptr_t Dimensions = 0xa70;
-        inline uintptr_t Pointer = 0x7b1f068;
-        inline uintptr_t ToDataModel1 = 0xa50;
-        inline uintptr_t ToDataModel2 = 0x1c0;
-        inline uintptr_t ViewMatrix = 0x140;
-    } // namespace VisualEngine
+         iinline uintptr_t Dimensions = 0xa70;
+         iinline uintptr_t FakeDataModel = 0xa50;
+         iinline uintptr_t Pointer = 0x7b1f068;
+         iinline uintptr_t RenderView = 0xb50;
+         iinline uintptr_t ViewMatrix = 0x140;
+    }
 
     namespace Workspace {
-        inline uintptr_t CurrentCamera = 0x460;
-        inline uintptr_t DistributedGameTime = 0x480;
-        inline uintptr_t Gravity = 0x1d0;
-        inline uintptr_t GravityContainer = 0x3d8;
-        inline uintptr_t PrimitivesPointer1 = 0x3d8;
-        inline uintptr_t PrimitivesPointer2 = 0x240;
-        inline uintptr_t ReadOnlyGravity = 0x978;
-    } // namespace Workspace
+         iinline uintptr_t CurrentCamera = 0x460;
+         iinline uintptr_t DistributedGameTime = 0x480;
+         iinline uintptr_t ReadOnlyGravity = 0x978;
+         iinline uintptr_t World = 0x3d8;
+    }
 
-} // namespace Offsets
+    namespace World {
+         iinline uintptr_t AirProperties = 0x1d8;
+         iinline uintptr_t FallenPartsDestroyHeight = 0x1c8;
+         iinline uintptr_t Gravity = 0x1d0;
+         iinline uintptr_t Primitives = 0x240;
+         iinline uintptr_t worldStepsPerSec = 0x660;
+    }
 
-// NIKS MEE DOEN!!!!
-namespace data::sdk::offsets {
-    namespace instance {
-        inline uintptr_t attribute_container = Offsets::Instance::AttributeContainer;
-        inline uintptr_t attribute_list = Offsets::Instance::AttributeList;
-        inline uintptr_t attribute_to_next = Offsets::Instance::AttributeToNext;
-        inline uintptr_t attribute_to_value = Offsets::Instance::AttributeToValue;
-        inline uintptr_t children_end = Offsets::Instance::ChildrenEnd;
-        inline uintptr_t children_start = Offsets::Instance::ChildrenStart;
-        inline uintptr_t children = Offsets::Instance::ChildrenStart;
-        inline uintptr_t class_base = Offsets::Instance::ClassBase;
-        inline uintptr_t class_descriptor = Offsets::Instance::ClassDescriptor;
-        inline uintptr_t class_name = Offsets::Instance::ClassName;
-        inline uintptr_t name = Offsets::Instance::Name;
-        inline uintptr_t parent = Offsets::Instance::Parent;
-        inline uintptr_t value = Offsets::Misc::Value;
-    } // namespace instance
-
-    namespace basescript {
-        inline uintptr_t is_core_script = Offsets::BaseScript::IsCoreScript;
-        inline uintptr_t module_flags = Offsets::BaseScript::ModuleFlags;
-    } // namespace basescript
-
-    namespace camera {
-        inline uintptr_t camera_subject = Offsets::Camera::CameraSubject;
-        inline uintptr_t camera_type = Offsets::Camera::CameraType;
-        inline uintptr_t field_of_view = Offsets::Camera::FieldOfView;
-        inline uintptr_t position = Offsets::Camera::Position;
-        inline uintptr_t rotation = Offsets::Camera::Rotation;
-        inline uintptr_t translation = Offsets::Camera::Position;
-        inline uintptr_t offset = 0x0;
-    } // namespace camera
-
-    namespace datamodel {
-        inline uintptr_t creator_id = Offsets::DataModel::CreatorId;
-        inline uintptr_t game_id = Offsets::DataModel::GameId;
-        inline uintptr_t gameid = Offsets::DataModel::GameId;
-        inline uintptr_t game_loaded = Offsets::DataModel::GameLoaded;
-        inline uintptr_t is_loaded = Offsets::DataModel::GameLoaded;
-        inline uintptr_t job_id = Offsets::DataModel::JobId;
-        inline uintptr_t place_id = Offsets::DataModel::PlaceId;
-        inline uintptr_t place_version = Offsets::DataModel::PlaceVersion;
-        inline uintptr_t primitive_count = Offsets::DataModel::PrimitiveCount;
-        inline uintptr_t script_context = Offsets::DataModel::ScriptContext;
-        inline uintptr_t server_ip = Offsets::DataModel::ServerIP;
-        inline uintptr_t workspace = Offsets::DataModel::Workspace;
-        inline uintptr_t pointer = Offsets::FakeDataModel::Pointer;
-        inline uintptr_t real_datamodel = Offsets::FakeDataModel::RealDataModel;
-        inline uintptr_t realdatamodel = Offsets::FakeDataModel::RealDataModel;
-    } // namespace datamodel
-
-    namespace fflags {
-        inline uintptr_t debug_disable_timeout_disconnect = Offsets::FFlags::DebugDisableTimeoutDisconnect;
-        inline uintptr_t enable_load_module = Offsets::FFlags::EnableLoadModule;
-        inline uintptr_t party_player_inactivity_timeout_in_seconds = Offsets::FFlags::PartyPlayerInactivityTimeoutInSeconds;
-        inline uintptr_t task_scheduler_target_fps = Offsets::FFlags::TaskSchedulerTargetFps;
-        inline uintptr_t web_socket_service_enable_client_creation = Offsets::FFlags::WebSocketServiceEnableClientCreation;
-    } // namespace fflags
-
-    namespace guiobject {
-        inline uintptr_t background_color3 = Offsets::GuiObject::BackgroundColor3;
-        inline uintptr_t border_color3 = Offsets::GuiObject::BorderColor3;
-        inline uintptr_t image = Offsets::GuiObject::Image;
-        inline uintptr_t layout_order = Offsets::GuiObject::LayoutOrder;
-        inline uintptr_t position = Offsets::GuiObject::Position;
-        inline uintptr_t rich_text = Offsets::GuiObject::RichText;
-        inline uintptr_t rotation = Offsets::GuiObject::Rotation;
-        inline uintptr_t screen_gui_enabled = Offsets::GuiObject::ScreenGui_Enabled;
-        inline uintptr_t size = Offsets::GuiObject::Size;
-        inline uintptr_t text = Offsets::GuiObject::Text;
-        inline uintptr_t text_color3 = Offsets::GuiObject::TextColor3;
-        inline uintptr_t visible = Offsets::GuiObject::Visible;
-    } // namespace guiobject
-
-    namespace humanoid {
-        inline uintptr_t auto_rotate = Offsets::Humanoid::AutoRotate;
-        inline uintptr_t floor_material = Offsets::Humanoid::FloorMaterial;
-        inline uintptr_t health = Offsets::Humanoid::Health;
-        inline uintptr_t hip_height = Offsets::Humanoid::HipHeight;
-        inline uintptr_t humanoid_state = Offsets::Humanoid::HumanoidState;
-        inline uintptr_t humanoid_state_id = Offsets::Humanoid::HumanoidStateID;
-        inline uintptr_t jump = Offsets::Humanoid::Jump;
-        inline uintptr_t jump_height = Offsets::Humanoid::JumpHeight;
-        inline uintptr_t jump_power = Offsets::Humanoid::JumpPower;
-        inline uintptr_t max_health = Offsets::Humanoid::MaxHealth;
-        inline uintptr_t max_slope_angle = Offsets::Humanoid::MaxSlopeAngle;
-        inline uintptr_t rig_type = Offsets::Humanoid::RigType;
-        inline uintptr_t walkspeed = Offsets::Humanoid::Walkspeed;
-        inline uintptr_t walk_speed = Offsets::Humanoid::Walkspeed;
-        inline uintptr_t walkspeed_check = Offsets::Humanoid::WalkspeedCheck;
-        inline uintptr_t camera_offset = 0x1a4;
-    } // namespace humanoid
-
-    namespace lighting {
-        inline uintptr_t ambient = Offsets::Lighting::Ambient;
-        inline uintptr_t brightness = Offsets::Lighting::Brightness;
-        inline uintptr_t clock_time = Offsets::Lighting::ClockTime;
-        inline uintptr_t color_shift_bottom = Offsets::Lighting::ColorShift_Bottom;
-        inline uintptr_t color_shift_top = Offsets::Lighting::ColorShift_Top;
-        inline uintptr_t exposure_compensation = Offsets::Lighting::ExposureCompensation;
-        inline uintptr_t fog_color = Offsets::Lighting::FogColor;
-        inline uintptr_t fog_end = Offsets::Lighting::FogEnd;
-        inline uintptr_t fog_start = Offsets::Lighting::FogStart;
-        inline uintptr_t geographic_latitude = Offsets::Lighting::GeographicLatitude;
-        inline uintptr_t outdoor_ambient = Offsets::Lighting::OutdoorAmbient;
-    } // namespace lighting
-
-    namespace localscript {
-        inline uintptr_t byte_code = Offsets::LocalScript::ByteCode;
-        inline uintptr_t ByteCode = Offsets::LocalScript::ByteCode;
-    } // namespace localscript
-
-    namespace modulescript {
-        inline uintptr_t byte_code = Offsets::ModuleScript::ByteCode;
-    } // namespace modulescript
-
-    namespace bytecode {
-        inline uintptr_t pointer = Offsets::ByteCode::Pointer;
-        inline uintptr_t Pointer = Offsets::ByteCode::Pointer;
-        inline uintptr_t size = Offsets::ByteCode::Size;
-        inline uintptr_t Size = Offsets::ByteCode::Size;
-    } // namespace bytecode
-
-    namespace primitives {
-        inline uintptr_t cframe = Offsets::BasePart::Position;
-        inline uintptr_t rotation = Offsets::BasePart::Rotation;
-        inline uintptr_t translation = Offsets::BasePart::Position;
-        inline uintptr_t velocity = Offsets::BasePart::AssemblyLinearVelocity;
-        inline uintptr_t size = Offsets::BasePart::Size;
-        inline uintptr_t transparency = Offsets::BasePart::Transparency;
-        inline uintptr_t orentation = 0x0;
-        inline uintptr_t primitive = Offsets::BasePart::Primitive;
-    } // namespace primitives
-
-    namespace visualengine {
-        inline uintptr_t dimensions = Offsets::VisualEngine::Dimensions;
-        inline uintptr_t pointer = Offsets::VisualEngine::Pointer;
-        inline uintptr_t to_datamodel1 = Offsets::VisualEngine::ToDataModel1;
-        inline uintptr_t to_datamodel2 = Offsets::VisualEngine::ToDataModel2;
-        inline uintptr_t view_matrix = Offsets::VisualEngine::ViewMatrix;
-        inline uintptr_t view_port = Offsets::VisualEngine::Dimensions;
-    } // namespace visualengine
-
-    namespace workspace {
-        inline uintptr_t current_camera = Offsets::Workspace::CurrentCamera;
-        inline uintptr_t camera = Offsets::Workspace::CurrentCamera;
-        inline uintptr_t distributed_game_time = Offsets::Workspace::DistributedGameTime;
-        inline uintptr_t gravity = Offsets::Workspace::Gravity;
-        inline uintptr_t gravity_container = Offsets::Workspace::GravityContainer;
-        inline uintptr_t primitives_pointer1 = Offsets::Workspace::PrimitivesPointer1;
-        inline uintptr_t primitives_pointer2 = Offsets::Workspace::PrimitivesPointer2;
-        inline uintptr_t read_only_gravity = Offsets::Workspace::ReadOnlyGravity;
-    } // namespace workspace
-
-    namespace players {
-        inline uintptr_t max_players = 0x0;
-        inline uintptr_t local_player = Offsets::Player::LocalPlayer;
-    } // namespace players
-
-    namespace player {
-        inline uintptr_t camera_mode = Offsets::Player::CameraMode;
-        inline uintptr_t country = Offsets::Player::Country;
-        inline uintptr_t display_name = Offsets::Player::DisplayName;
-        inline uintptr_t display = Offsets::Player::DisplayName;
-        inline uintptr_t gender = Offsets::Player::Gender;
-        inline uintptr_t local_player = Offsets::Player::LocalPlayer;
-        inline uintptr_t max_zoom_distance = Offsets::Player::MaxZoomDistance;
-        inline uintptr_t min_zoom_distance = Offsets::Player::MinZoomDistance;
-        inline uintptr_t model_instance = Offsets::Player::ModelInstance;
-        inline uintptr_t character = Offsets::Player::ModelInstance;
-        inline uintptr_t mouse = Offsets::Player::Mouse;
-        inline uintptr_t team = Offsets::Player::Team;
-        inline uintptr_t user_id = Offsets::Player::UserId;
-    } // namespace player
-
-    namespace renderview {
-        inline uintptr_t device_d3d11 = Offsets::RenderView::DeviceD3D11;
-        inline uintptr_t visual_engine = Offsets::RenderView::VisualEngine;
-    } // namespace renderview
-} // namespace data::sdk::offsets
+}
