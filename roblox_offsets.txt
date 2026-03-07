@@ -75,7 +75,7 @@ namespace Offsets {
 
     namespace Camera {
          iinline uintptr_t CameraSubject = 0xe8;
-         iinline uintptr_t CameraType = 0x158;
+         iinline uintptr_t CameraMode = 0x158;
          iinline uintptr_t FieldOfView = 0x160;
          iinline uintptr_t Position = 0x11c;
          iinline uintptr_t Rotation = 0xf8;
