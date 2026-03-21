@@ -1,1 +1,25 @@
-
+{
+  "RobloxVersion": "version-ae421f0582e54718",
+  "AnimationTrack_Animation": "0xd0",
+  "AnimationTrack_Animator": "0x118",
+  "AnimationTrack_IsPlaying": "0x3a2",
+  "Camera_Position": "0x11c",
+  "Camera_Rotation": "0xf8",
+  "Camera_FieldOfView": "0x160",
+  "DataModel_PlaceId": "0x198",
+  "DataModel_GameId": "0x190",
+  "DataModel_Workspace": "0x178",
+  "Player_LocalPlayer": "0x130",
+  "Player_UserId": "0x2c8",
+  "Player_DisplayName": "0x130",
+  "Humanoid_Health": "0x194",
+  "Humanoid_MaxHealth": "0x1b4",
+  "Humanoid_Walkspeed": "0x1d4",
+  "VisualEngine_ViewMatrix": "0x140",
+  "VisualEngine_Dimensions": "0xa70",
+  "VisualEngine_Pointer": "0x7d891c0",
+  "Workspace_CurrentCamera": "0x468",
+  "Instance_ChildrenStart": "0x70",
+  "Instance_Name": "0xb0",
+  "Instance_Parent": "0x68"
+}
