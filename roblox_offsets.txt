@@ -1,7 +1,3 @@
-#pragma once
-
-#include <cstdint>
-#include <string>
 
 namespace Offsets {
     inline std::string ClientVersion = "version-ae421f0582e54718";
