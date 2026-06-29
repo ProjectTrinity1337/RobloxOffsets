@@ -73,6 +73,18 @@ namespace Offsets {
          inline uintptr_t ZOffset = 0x1c8;
     }
 
+    namespace Primitive {
+        inline uintptr_t AssemblyAngularVelocity = 0x104;
+        inline uintptr_t AssemblyLinearVelocity = 0xf8;
+        inline uintptr_t Flags = 0x1b6;
+        inline uintptr_t Material = 0x0;
+        inline uintptr_t Owner = 0x200;
+        inline uintptr_t Position = 0xec;
+        inline uintptr_t Rotation = 0xc8;
+        inline uintptr_t Size = 0x1b8;
+        inline uintptr_t Validate = 0x6;
+    }
+
     namespace BloomEffect {
          inline uintptr_t Enabled = 0xc8;
          inline uintptr_t Intensity = 0xd0;
